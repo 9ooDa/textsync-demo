@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
+<meta name="description" content="TextSync picks the dubbing line whose pronunciation fits the lip motion on screen. Hear every candidate on the same clip, next to the lip feature bank map the scorer worked from.">
+<title>TextSync — Picking the Dub Line That Fits the Lips</title>
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Section">
+  <a class="brand" href="#top" translate="no">TextSync</a>
+  <ul class="navlinks">
+    <li><a href="#mono">Monolingual</a></li>
+    <li><a href="#xling">Cross-lingual</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+<header id="top" class="hero">
+  <p class="eyebrow">Cross-lingual dubbing · candidate selection</p>
+  <h1>Same meaning.<br><em>Different mouths.</em></h1>
+  <p class="lead">
+    A translator hands you several lines that mean the same thing. Nothing in the
+    meaning tells you which one the mouth on screen can actually carry. TextSync
+    watches the video and picks one.
+  </p>
+  
+</header>
+
+<section id="samples" class="section" aria-labelledby="samples-h">
+  <div class="sectionhead">
+    <h2 id="samples-h">Which Line Fits the Lips?</h2>
+    <p class="sub">
+      One clip, several lines that mean the same thing, each one dubbed onto it.
+      Switch between them to hear each line from the top. The line the human dub
+      actually used is marked, and so is the line each method picked. On the
+      right is what the scorer saw: the same clip mapped through the lip feature
+      bank.
+    </p>
+  </div>
+
+  <div class="readmap">
+    <h3>How to Read the Map Beside Each Clip</h3>
+    <p class="sub">
+      The two panels on the right of every card are what the scorer worked from.
+      Neither one is generated: the frames are the clip's own, and the faces are
+      the lip feature bank, built once from English video.
+    </p>
+    <dl class="maplist">
+      <div>
+        <dt>(a) Original video</dt>
+        <dd>The clip's frames in order, with the words the actor spoke laid along
+        the same timeline.</dd>
+      </div>
+      <div>
+        <dt>(b) The lip feature bank, twice</dt>
+        <dd>The mouth shapes the lip feature bank holds, placed in the encoder's
+        2-D space.
+        Left is the candidate TextSync scored best, right is the one it scored
+        worst — the same video, two lines asking for different mouths.</dd>
+      </div>
+      <div>
+        <dt>Red numbers &amp; diamonds</dt>
+        <dd>Red numbers are the order of mouth shapes a line asks for. Diamonds
+        are the video's own frames, identical in both panels.</dd>
+      </div>
+      <div>
+        <dt>Diamond fill</dt>
+        <dd>How well the mouth a line asks for at that frame matches what the
+        frame looks like. The upper figure ranks it among the 22 shapes; the
+        lower one marks matched or not, and fades the frames where both lines
+        get the same verdict — what is left is where the two lines differ.</dd>
+      </div>
+    </dl>
+  </div>
+  <section class="block" id="mono" aria-labelledby="mono-h">
+    <div class="blockhead">
+      <h3 id="mono-h">Monolingual<span class="sep" aria-hidden="true"> · </span><span class="cond">English video, English paraphrases</span></h3>
+      <p class="sub">
+        Every candidate says the same thing in the same language, so wording
+        alone cannot separate them — only the mouth can. The human dub used the
+        line the actor actually spoke.
+      </p>
+      <p class="count" id="mono-count"></p>
+    </div>
+    <div id="cards-mono" class="cards"></div>
+  </section>
+
+  <section class="block" id="xling" aria-labelledby="xling-h">
+    <div class="blockhead">
+      <h3 id="xling-h">Cross-lingual<span class="sep" aria-hidden="true"> · </span><span class="cond">English video, Spanish dubs</span></h3>
+      <p class="sub">
+        The same scorer, now choosing a Spanish line for an English mouth. The
+        lip feature bank is the one built from English alone; nothing here was
+        rebuilt or retrained for Spanish.
+      </p>
+      <p class="count" id="xling-count"></p>
+    </div>
+    <div id="cards-xling" class="cards"></div>
+  </section>
+</section>
+
+</main>
+
+<footer class="terms" aria-labelledby="terms-h">
+  <h2 id="terms-h">Data and Terms</h2>
+  <div class="termsgrid">
+  <p>
+    The talking-head clips are <strong>AI-generated</strong> with LTX-2.3 and a
+    TalkVid audio-to-video LoRA; the people on screen are synthetic and are not
+    real individuals. The LoRA weights are not distributed here. The clips are
+    shown for illustration and are not released as a dataset.
+  </p>
+  <p>
+    The single line of dialogue quoted on each card comes from the Heroes corpus
+    (Öktem et al., 2018) and is used for research and educational purposes. No
+    original video, audio, or full script is included or redistributed &mdash;
+    the dubbed speech is synthesized with Kokoro-82M (Apache-2.0) and is not the
+    original recording.
+  </p>
+  <p>
+    The prototype faces in the lip feature bank maps are small crops from
+    LRS3-TED, shown for illustration under its non-commercial research terms, at
+    the scale used in the paper&rsquo;s figures.
+    <br><br>
+    Questions or removal requests:
+    <a href="mailto:dayeonku@gm.gist.ac.kr">dayeonku@gm.gist.ac.kr</a>.
+  </p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,650 @@
+{
+  "corpus": "Öktem Heroes (LTX-2.3 + TalkVid A2V LoRA renders)",
+  "note_en": "Samples are hand-picked. Right or wrong comes straight from the scoring dumps behind the paper. Where a dump stores no pick index, the picked line is recovered with the rule that dump used — VER from its cached VSR hypothesis, SyncNet and MTDVocaLiST from their stored per-candidate scores — and kept only where the recovered verdict matches the dump. A dash means the line is not recoverable; n/a means the method has no score for that clip.",
+  "deployed_key": "exp=1Bint_step=symP1_lam0.1",
+  "samples": [
+    {
+      "id": "heroes_s3_8_eng_aligned_eng0270",
+      "lang": "es",
+      "speaker": "Linderman",
+      "source_text": "Almost as good as my pot pies.",
+      "duration": 1.53,
+      "candidates": [
+        "Casi tan buenos como mis pasteles de carne.",
+        "Casi tan ricos como mis pasteles de potaje.",
+        "Casi iguales de buenos que mis pasteles de carne.",
+        "Apenas llegan al nivel de mis pasteles de potaje.",
+        "Prácticamente tan buenos como mis pasteles de horno.",
+        "Casi tanto como mis postres."
+      ],
+      "truth_index": 5,
+      "clips": [
+        "media/heroes_s3_8_eng_aligned_eng0270/cand1.mp4",
+        "media/heroes_s3_8_eng_aligned_eng0270/cand2.mp4",
+        "media/heroes_s3_8_eng_aligned_eng0270/cand4.mp4",
+        "media/heroes_s3_8_eng_aligned_eng0270/cand5.mp4",
+        "media/heroes_s3_8_eng_aligned_eng0270/cand3.mp4",
+        "media/heroes_s3_8_eng_aligned_eng0270/cand0.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s3_8_eng_aligned_eng0270__fit_ex2.png",
+          "kind": "fit",
+          "ex2": true,
+          "width": 1400,
+          "height": 1142
+        },
+        {
+          "src": "figures/heroes_s3_8_eng_aligned_eng0270__contrast_ex2.png",
+          "kind": "contrast",
+          "ex2": true,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "TS_al",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "hit": 1.0,
+          "pick": 5,
+          "deployed": true
+        },
+        {
+          "key": "VER438h",
+          "label": "VER 438h",
+          "hit": 0.0,
+          "pick": 1,
+          "deployed": false
+        },
+        {
+          "key": "VER3291h",
+          "label": "VER 3291h",
+          "hit": 0.0,
+          "pick": 3,
+          "deployed": false
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "hit": 0.0,
+          "pick": 4,
+          "deployed": false
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "hit": 0.0,
+          "pick": 3,
+          "deployed": false
+        }
+      ],
+      "margin": 0.02587010819053026,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s2_2_eng_aligned_eng0234",
+      "lang": "es",
+      "speaker": "ANGELA",
+      "source_text": "Yes, it's the logo of my husband's law firm.",
+      "duration": 2.34,
+      "candidates": [
+        "Sí, es el logotipo de la firma de abogados de mi esposo.",
+        "Efectivamente, es el logo de la firma jurídica de mi marido.",
+        "Sí, es el logo del bufete de abogados de mi marido.",
+        "Sí, se trata del logo del despacho de abogados de mi esposo.",
+        "Sí, es el emblema del bufete de mi marido.",
+        "Sí, es el logo del bufete de mi marido."
+      ],
+      "truth_index": 5,
+      "clips": [
+        "media/heroes_s2_2_eng_aligned_eng0234/cand2.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0234/cand3.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0234/cand1.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0234/cand4.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0234/cand5.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0234/cand0.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s2_2_eng_aligned_eng0234__fit_ex2.png",
+          "kind": "fit",
+          "ex2": true,
+          "width": 1400,
+          "height": 1103
+        },
+        {
+          "src": "figures/heroes_s2_2_eng_aligned_eng0234__contrast_ex2.png",
+          "kind": "contrast",
+          "ex2": true,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "TS_al",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "hit": 1.0,
+          "pick": 5,
+          "deployed": true
+        },
+        {
+          "key": "VER438h",
+          "label": "VER 438h",
+          "hit": 0.0,
+          "pick": 1,
+          "deployed": false
+        },
+        {
+          "key": "VER3291h",
+          "label": "VER 3291h",
+          "hit": 0.0,
+          "pick": 0,
+          "deployed": false
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "hit": 0.0,
+          "pick": 3,
+          "deployed": false
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "hit": 0.0,
+          "pick": 4,
+          "deployed": false
+        }
+      ],
+      "margin": 0.02403214461242309,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s2_2_eng_aligned_eng0013",
+      "lang": "es",
+      "speaker": "RICKY",
+      "source_text": "You took something that's ours, Boyle.",
+      "duration": 1.36,
+      "candidates": [
+        "Robaste algo que es de nuestra propiedad, Boyle.",
+        "Boyle, has tomado algo que nos pertenece.",
+        "Tomaste algo nuestro, Boyle.",
+        "Has cogido algo que es nuestro.",
+        "Te llevaste algo que es nuestro, Boyle.",
+        "Has tomado algo que nos pertenece, Boyle."
+      ],
+      "truth_index": 3,
+      "clips": [
+        "media/heroes_s2_2_eng_aligned_eng0013/cand4.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0013/cand5.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0013/cand3.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0013/cand0.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0013/cand1.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0013/cand2.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s2_2_eng_aligned_eng0013__fit_ex2.png",
+          "kind": "fit",
+          "ex2": true,
+          "width": 1400,
+          "height": 1149
+        },
+        {
+          "src": "figures/heroes_s2_2_eng_aligned_eng0013__contrast_ex2.png",
+          "kind": "contrast",
+          "ex2": true,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "TS_al",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "hit": 1.0,
+          "pick": 3,
+          "deployed": true
+        },
+        {
+          "key": "VER438h",
+          "label": "VER 438h",
+          "hit": 1.0,
+          "pick": 3,
+          "deployed": false
+        },
+        {
+          "key": "VER3291h",
+          "label": "VER 3291h",
+          "hit": 0.0,
+          "pick": 4,
+          "deployed": false
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "hit": 0.0,
+          "pick": 4,
+          "deployed": false
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "hit": 0.0,
+          "pick": 1,
+          "deployed": false
+        }
+      ],
+      "margin": 0.043158037520926396,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s3_16_eng_aligned_eng0318",
+      "lang": "es",
+      "speaker": "Sandra",
+      "source_text": "The Company?",
+      "duration": 1.16,
+      "candidates": [
+        "¿La firma?",
+        "¿La organización?",
+        "¿La empresa?",
+        "¿La corporación?",
+        "¿La sociedad?",
+        "¿La Compañía?"
+      ],
+      "truth_index": 5,
+      "clips": [
+        "media/heroes_s3_16_eng_aligned_eng0318/cand4.mp4",
+        "media/heroes_s3_16_eng_aligned_eng0318/cand3.mp4",
+        "media/heroes_s3_16_eng_aligned_eng0318/cand1.mp4",
+        "media/heroes_s3_16_eng_aligned_eng0318/cand5.mp4",
+        "media/heroes_s3_16_eng_aligned_eng0318/cand2.mp4",
+        "media/heroes_s3_16_eng_aligned_eng0318/cand0.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s3_16_eng_aligned_eng0318__fit_ex2.png",
+          "kind": "fit",
+          "ex2": true,
+          "width": 1400,
+          "height": 1149
+        },
+        {
+          "src": "figures/heroes_s3_16_eng_aligned_eng0318__contrast_ex2.png",
+          "kind": "contrast",
+          "ex2": true,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "TS_al",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "hit": 1.0,
+          "pick": 5,
+          "deployed": true
+        },
+        {
+          "key": "VER438h",
+          "label": "VER 438h",
+          "hit": 0.0,
+          "pick": 1,
+          "deployed": false
+        },
+        {
+          "key": "VER3291h",
+          "label": "VER 3291h",
+          "hit": 0.0,
+          "pick": 1,
+          "deployed": false
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "hit": 0.0,
+          "pick": 1,
+          "deployed": false
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "hit": 1.0,
+          "pick": 5,
+          "deployed": false
+        }
+      ],
+      "margin": 0.030462834865575106,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s2_7_eng_aligned_eng0262",
+      "lang": "es",
+      "speaker": "NIKI",
+      "source_text": "I had to stop myself.",
+      "duration": 1.62,
+      "candidates": [
+        "Tuve que detenerme.",
+        "Tuve que frenarme.",
+        "Me vi obligado a detenerme.",
+        "Así no podrá hacerlo.",
+        "Fue necesario que me detuviera.",
+        "Me tuve que parar."
+      ],
+      "truth_index": 3,
+      "clips": [
+        "media/heroes_s2_7_eng_aligned_eng0262/cand1.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0262/cand3.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0262/cand4.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0262/cand0.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0262/cand5.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0262/cand2.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s2_7_eng_aligned_eng0262__fit_ex2.png",
+          "kind": "fit",
+          "ex2": true,
+          "width": 1400,
+          "height": 1142
+        },
+        {
+          "src": "figures/heroes_s2_7_eng_aligned_eng0262__contrast_ex2.png",
+          "kind": "contrast",
+          "ex2": true,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "TS_al",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "hit": 1.0,
+          "pick": 3,
+          "deployed": true
+        },
+        {
+          "key": "VER438h",
+          "label": "VER 438h",
+          "hit": 1.0,
+          "pick": 3,
+          "deployed": false
+        },
+        {
+          "key": "VER3291h",
+          "label": "VER 3291h",
+          "hit": 0.0,
+          "pick": 2,
+          "deployed": false
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "hit": 0.0,
+          "pick": 4,
+          "deployed": false
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "hit": 0.0,
+          "pick": 0,
+          "deployed": false
+        }
+      ],
+      "margin": 0.02681284733935052,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s2_7_eng_aligned_eng0032",
+      "lang": "en",
+      "speaker": "MR. BENNET",
+      "source_text": "That's just standard protocol.",
+      "duration": 1.22,
+      "candidates": [
+        "Standard protocol always applies.",
+        "Standard procedure, no exceptions.",
+        "Protocol is non-negotiable.",
+        "Must follow rules strictly.",
+        "Follows established standard procedures.",
+        "That's just standard protocol."
+      ],
+      "truth_index": 5,
+      "clips": [
+        "media/heroes_s2_7_eng_aligned_eng0032/cand1.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0032/cand3.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0032/cand5.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0032/cand4.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0032/cand2.mp4",
+        "media/heroes_s2_7_eng_aligned_eng0032/cand0.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s2_7_eng_aligned_eng0032__fit.png",
+          "kind": "fit",
+          "ex2": false,
+          "width": 1400,
+          "height": 1149
+        },
+        {
+          "src": "figures/heroes_s2_7_eng_aligned_eng0032__contrast.png",
+          "kind": "contrast",
+          "ex2": false,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "textsync",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "deployed": true,
+          "hit": 1.0,
+          "pick": 5,
+          "note": null
+        },
+        {
+          "key": "d_438h",
+          "label": "VER 438h",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 0,
+          "note": "recomputed from the cached VSR hypothesis"
+        },
+        {
+          "key": "d_3291h",
+          "label": "VER 3291h",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 0,
+          "note": "recomputed from the cached VSR hypothesis"
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 1
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "deployed": false,
+          "hit": 1.0,
+          "pick": 5
+        }
+      ],
+      "margin": null,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s2_2_eng_aligned_eng0052",
+      "lang": "en",
+      "speaker": "UNKNOWN",
+      "source_text": "Alright, we got Kaito Nakamura, 70, Japanese national...",
+      "duration": 3.35,
+      "candidates": [
+        "Alright, we have Kaito Nakamura, 70, Japanese...",
+        "Alright, we've got Kaito Nakamura, 70, Japanese.",
+        "Got Kaito Nakamura, 70, Japanese national... alright.",
+        "Got Kaito Nakamura, 70 years old, Japanese.",
+        "Alright, we got Kaito Nakamura, 70, Japanese national...",
+        "Kaito Nakamura, 70, Japanese... we have him."
+      ],
+      "truth_index": 4,
+      "clips": [
+        "media/heroes_s2_2_eng_aligned_eng0052/cand1.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0052/cand3.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0052/cand2.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0052/cand5.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0052/cand0.mp4",
+        "media/heroes_s2_2_eng_aligned_eng0052/cand4.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s2_2_eng_aligned_eng0052__fit.png",
+          "kind": "fit",
+          "ex2": false,
+          "width": 1400,
+          "height": 1115
+        },
+        {
+          "src": "figures/heroes_s2_2_eng_aligned_eng0052__contrast.png",
+          "kind": "contrast",
+          "ex2": false,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "textsync",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "deployed": true,
+          "hit": 1.0,
+          "pick": 4,
+          "note": null
+        },
+        {
+          "key": "d_438h",
+          "label": "VER 438h",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 0,
+          "note": "recomputed from the cached VSR hypothesis"
+        },
+        {
+          "key": "d_3291h",
+          "label": "VER 3291h",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 1,
+          "note": "recomputed from the cached VSR hypothesis"
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 2
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 5
+        }
+      ],
+      "margin": null,
+      "extra_slots": []
+    },
+    {
+      "id": "heroes_s2_10_eng_aligned_eng0049",
+      "lang": "en",
+      "speaker": "BOB",
+      "source_text": "You will be left alone to lead a normal life.",
+      "duration": 2.34,
+      "candidates": [
+        "You will be left alone to lead a normal life.",
+        "You'll lead a normal life, left alone to do so.",
+        "To lead a normal life, you'll be on your own.",
+        "You'll have to navigate on your own for a normal existence.",
+        "You'll lead a normal life, left to your own devices.",
+        "From now on you are on your own, living normally."
+      ],
+      "truth_index": 0,
+      "clips": [
+        "media/heroes_s2_10_eng_aligned_eng0049/cand0.mp4",
+        "media/heroes_s2_10_eng_aligned_eng0049/cand2.mp4",
+        "media/heroes_s2_10_eng_aligned_eng0049/cand1.mp4",
+        "media/heroes_s2_10_eng_aligned_eng0049/cand4.mp4",
+        "media/heroes_s2_10_eng_aligned_eng0049/cand3.mp4",
+        "media/heroes_s2_10_eng_aligned_eng0049/cand5.mp4"
+      ],
+      "figures": [
+        {
+          "src": "figures/heroes_s2_10_eng_aligned_eng0049__fit.png",
+          "kind": "fit",
+          "ex2": false,
+          "width": 1400,
+          "height": 1163
+        },
+        {
+          "src": "figures/heroes_s2_10_eng_aligned_eng0049__contrast.png",
+          "kind": "contrast",
+          "ex2": false,
+          "width": 1400,
+          "height": 978
+        }
+      ],
+      "methods": [
+        {
+          "key": "textsync",
+          "label": "TextSync (1B-int, λ=0.1)",
+          "deployed": true,
+          "hit": 1.0,
+          "pick": 0,
+          "note": null
+        },
+        {
+          "key": "d_438h",
+          "label": "VER 438h",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 2,
+          "note": "recomputed from the cached VSR hypothesis"
+        },
+        {
+          "key": "d_3291h",
+          "label": "VER 3291h",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 3,
+          "note": "recomputed from the cached VSR hypothesis"
+        },
+        {
+          "key": "MTD",
+          "label": "MTDVocaLiST",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 4
+        },
+        {
+          "key": "SN",
+          "label": "SyncNet",
+          "deployed": false,
+          "hit": 0.0,
+          "pick": 2
+        }
+      ],
+      "margin": null,
+      "extra_slots": [
+        5
+      ]
+    }
+  ]
+}
